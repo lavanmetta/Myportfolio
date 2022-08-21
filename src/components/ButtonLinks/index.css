@@ -1,0 +1,83 @@
+.button-container {
+  text-align: center;
+  margin-top: 5px;
+  scroll-behavior: smooth;
+}
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+}
+.zone {
+  border-radius: 1px;
+  border: 1px solid tomato;
+  height: 45px;
+  border-bottom-width: 2px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  transition: all 0.3s linear;
+}
+
+.I-button {
+  margin: 6px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: century Gothic, Arial, Impact, 'Arial Narrow Bold', sans-serif;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.I-button:hover {
+  color: tomato;
+}
+
+@media only screen and (max-width: 600px) {
+  .I-button {
+    font-size: 13px;
+    margin: 5px;
+  }
+  .I-button:hover {
+    color: tomato;
+  }
+  .nav {
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}

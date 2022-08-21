@@ -1,0 +1,10 @@
+* {
+  font-family: century Gothic, Arial, Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+

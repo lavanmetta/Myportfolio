@@ -1,0 +1,29 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  align-items: center;
+}
+.skill-heading {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.tabs-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.apps-list {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .apps-list {
+    flex-wrap: wrap;
+  }
+  .button-list {
+    margin-right: 40px;
+  }
+}

@@ -1,0 +1,33 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 80px;
+  align-items: center;
+}
+.project-heading {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.project-store {
+  display: flex;
+  width: 85%;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-tab-list {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-list {
+    flex-wrap: wrap;
+  }
+}
